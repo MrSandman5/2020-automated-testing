@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class SimpleTest {
+public class EasyTest {
 
     private static List<String> source;
 

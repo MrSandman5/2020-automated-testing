@@ -1,6 +1,7 @@
 package selenide;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.ElementsCollection;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -40,7 +41,12 @@ public class MainPageTest {
 
     @Test
     public void checkExit() {
-        mainPage.exit();
+        mainPage.exitBot();
+    }
+
+    @Test void checkNavSideCount() {
+        ElementsCollection navSides = mainPage.getNavSides();
+        assertEquals(15, navSides.size());
     }
 
     @AfterEach

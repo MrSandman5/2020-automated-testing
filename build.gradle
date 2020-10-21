@@ -10,6 +10,7 @@ repositories {
 dependencies {
     testImplementation(platform('org.junit:junit-bom:5.7.0'))
     testImplementation('org.junit.jupiter:junit-jupiter')
+    testCompile('com.codeborne:selenide:5.15.0')
 }
 
 test {

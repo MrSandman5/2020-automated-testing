@@ -37,9 +37,7 @@ public class ToDoListTest {
         onView(withId(R.id.et_todo_list_name)).perform(typeText("New To-Do list"), closeSoftKeyboard());
         onView(withId(R.id.bt_newtodolist_ok)).perform(click());
 
-        onView(withId(R.id.fab_new_task)).perform(click());
         onView(withId(R.id.clayout)).perform(swipeRight());
-        onView(withId(R.id.tv_new_task_listchoose)).perform(click());
         onView(withId(R.id.nav_dummy1)).check(matches(is(withText("New To-Do list"))));
     }
 

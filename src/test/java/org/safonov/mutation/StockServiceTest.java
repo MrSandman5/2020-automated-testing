@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class StockServiceTest {
 
-    @DisplayName("Test deduct stock")
     @Test
     public void testDeduct() {
         final StockService obj = new StockService(100);
@@ -21,7 +20,6 @@ public class StockServiceTest {
 
     }
 
-    @DisplayName("Test add stock")
     @Test
     public void testAdd() {
         final StockService obj = new StockService(100);

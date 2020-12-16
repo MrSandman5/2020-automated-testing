@@ -8,22 +8,16 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class PalindromeServiceTest {
 
     @Test
-    public void palindromeMutation() {
+    public void empty() {
         final PalindromeService palindromeTester = new PalindromeService();
-        assertTrue(palindromeTester.isPalindromeMutation("noon"));
+        assertTrue(palindromeTester.isPalindrome(""));
     }
 
-    @Test
-    public void almostPalindromeMutation() {
+    /*@Test
+    public void single() {
         final PalindromeService palindromeTester = new PalindromeService();
-        assertFalse(palindromeTester.isPalindromeMutation("neon"));
-    }
-
-    @Test
-    public void notPalindromeMutation() {
-        final PalindromeService palindromeTester = new PalindromeService();
-        assertFalse(palindromeTester.isPalindromeMutation("box"));
-    }
+        assertTrue(palindromeTester.isPalindrome("a"));
+    }*/
 
     @Test
     public void palindrome() {

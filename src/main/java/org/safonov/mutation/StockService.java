@@ -2,10 +2,10 @@ package org.safonov.mutation;
 
 public class StockService {
 
-    private int qtyOnHand;
+    private int quantity;
 
     public StockService(final int qtyOnHand) {
-        this.qtyOnHand = qtyOnHand;
+        this.quantity = qtyOnHand;
     }
 
     private void isValidQty(final int qty) {
@@ -16,19 +16,19 @@ public class StockService {
 
     public int add(final int qty) {
         isValidQty(qty);
-        qtyOnHand = qtyOnHand + qty;
-        return qtyOnHand;
+        quantity = quantity + qty;
+        return quantity;
     }
 
     public int deduct(final int qty) {
         isValidQty(qty);
 
-        final int newQty = qtyOnHand - qty;
+        final int newQty = quantity - qty;
         if (newQty < 0) {
             throw new IllegalArgumentException("Out of Stock!");
         } else {
-            qtyOnHand = newQty;
+            quantity = newQty;
         }
-        return qtyOnHand;
+        return quantity;
     }
 }

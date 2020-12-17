@@ -1,6 +1,6 @@
 package org.safonov.mutation;
 
-public class CalculatorService {
+public class Calculator {
 
     public boolean isPositiveMutation(final int number) {
         boolean result = false;

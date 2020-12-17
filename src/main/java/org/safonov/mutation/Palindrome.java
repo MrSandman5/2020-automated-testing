@@ -1,6 +1,6 @@
 package org.safonov.mutation;
 
-public class PalindromeService {
+public class Palindrome {
 
     public boolean isPalindrome(final String inputString) {
         if (inputString.length() == 0) {

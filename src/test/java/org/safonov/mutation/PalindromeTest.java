@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class PalindromeServiceTest {
+public class PalindromeTest {
 
     @Test
     public void empty() {
-        final PalindromeService palindromeTester = new PalindromeService();
+        final Palindrome palindromeTester = new Palindrome();
         assertTrue(palindromeTester.isPalindrome(""));
     }
 
@@ -21,19 +21,19 @@ public class PalindromeServiceTest {
 
     @Test
     public void palindrome() {
-        final PalindromeService palindromeTester = new PalindromeService();
+        final Palindrome palindromeTester = new Palindrome();
         assertTrue(palindromeTester.isPalindrome("noon"));
     }
 
     @Test
     public void almostPalindrome() {
-        final PalindromeService palindromeTester = new PalindromeService();
+        final Palindrome palindromeTester = new Palindrome();
         assertFalse(palindromeTester.isPalindrome("neon"));
     }
 
     @Test
     public void notPalindrome() {
-        final PalindromeService palindromeTester = new PalindromeService();
+        final Palindrome palindromeTester = new Palindrome();
         assertFalse(palindromeTester.isPalindrome("box"));
     }
 
